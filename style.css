@@ -45,3 +45,44 @@ body {
   display: flex;
   gap: 32px;
 }
+
+/* Section 1 main*/
+
+.section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 17px;
+}
+
+.section__title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 24px;
+}
+
+.section__parrafo {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+.section__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.section__arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.section__img {
+  width: 368px;
+  height: 368px;
+  border-radius: 50%;
+}
+
+/* Section 2 */
