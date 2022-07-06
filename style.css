@@ -52,6 +52,9 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 17px;
+  margin-bottom: 32px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section__title {
@@ -86,3 +89,24 @@ body {
 }
 
 /* Section 2 */
+.section-2 {
+  background-color: #eaf2fd;
+  padding: 64px 152px;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.section-2__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 0 0 16px;
+}
+
+.section-2__parrafo {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
