@@ -213,10 +213,18 @@
             ></textarea>
             <span class="placeholder"> Mensaje </span>
           </div>
-          <button class="button-filled">Repositorio</button>
+          <button class="button-filled">Enviar mensaje</button>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>Desarrollado por Sofía Pereyra</p>
+      <p id="current-year"></p>
+    </footer>
+    <script>
+      document
+        .getElementById("current-year")
+        .appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
   </body>
 </html>
