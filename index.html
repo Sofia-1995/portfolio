@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animated-placeholder.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,17 +15,17 @@
     />
   </head>
   <body>
-    <header class="header container">
+    <header class="header container content-wrapper">
       <div class="header__title">
         <img src="./images/logo.svg" alt="" class="header__img" />
         <span class="header__nombre">Sofia Pereyra</span>
       </div>
       <nav class="header__nav">
-        <a href="#sobremi" class="links">Sobre mi</a>
-        <a href="#skills" class="links">Skills</a>
-        <a href="#hobbies" class="links">Hobbies</a>
-        <a href="#formacion" class="links">Formación</a>
-        <a href="#proyectos" class="links">Proyectos</a>
+        <a href="#sobremi" class="links mobile-hidden">Sobre mi</a>
+        <a href="#skills" class="links mobile-hidden">Skills</a>
+        <a href="#hobbies" class="links mobile-hidden">Hobbies</a>
+        <a href="#formacion" class="links mobile-hidden">Formación</a>
+        <a href="#proyectos" class="links mobile-hidden">Proyectos</a>
         <a href="mailto:sofia_pereyra95@hotmail.com" class="links"
           ><b>sofia_pereyra95@hotmail.com</b></a
         >
@@ -32,56 +33,62 @@
     </header>
     <main>
       <section class="section-1 container">
-        <div>
-          <h1 class="section-1__title">
-            Hola, mi nombre es Fulana de Tal y construyo paginas web
-          </h1>
-          <p class="section-1__parrafo">
-            Soy formada en .... lorem ipsum sit amet consectetur y actualmente
-            estoy participando del proyecto Oracle ONE en Alura Latam.
-          </p>
-          <nav class="section-1__nav">
-            <a href="" class="links section-1__arrow"
-              >Github
-              <img src="./images/arrow.svg" alt="" />
-            </a>
-            <a href="" class="links section-1__arrow"
-              >Linkedin
-              <img src="./images/arrow.svg" alt="" />
-            </a>
-            <a href="" class="links section-1__arrow"
-              >Instagram
-              <img src="./images/arrow.svg" alt="" />
-            </a>
-            <a href="" class="links section-1__arrow"
-              >Curriculum
-              <img src="./images/arrow.svg" alt="" />
-            </a>
-          </nav>
+        <div class="section-1__container content-wrapper">
+          <div class="section-1__wrapper">
+            <h1 class="section-1__title">
+              Hola, mi nombre es Fulana de Tal y construyo paginas web
+            </h1>
+            <p class="section-1__parrafo">
+              Soy formada en .... lorem ipsum sit amet consectetur y actualmente
+              estoy participando del proyecto Oracle ONE en Alura Latam.
+            </p>
+            <nav class="section-1__nav">
+              <a href="" class="links section-1__arrow"
+                >Github
+                <img src="./images/arrow.svg" alt="" />
+              </a>
+              <a href="" class="links section-1__arrow"
+                >Linkedin
+                <img src="./images/arrow.svg" alt="" />
+              </a>
+              <a href="" class="links section-1__arrow"
+                >Instagram
+                <img src="./images/arrow.svg" alt="" />
+              </a>
+              <a href="" class="links section-1__arrow"
+                >Curriculum
+                <img src="./images/arrow.svg" alt="" />
+              </a>
+            </nav>
+          </div>
+          <div class="section-1__img-wrapper">
+            <div class="section-1__img"></div>
+          </div>
         </div>
-        <img src="./images/foto.jpg" alt="" class="section-1__img" />
       </section>
       <section class="section-2 container">
-        <div>
-          <h2 class="section-2__title section-title">Sobre mi</h2>
-          <p class="section-2__parrafo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque velit velit, volutpat semper dignissim dictum,
-            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
-            potenti. Ut semper sagittis ligula et lacinia.
-          </p>
-          <p class="section-2__parrafo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque velit velit, volutpat semper dignissim dictum,
-            imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse
-            potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis
-            venenatis, egestas metus vitae, aliquet metus.
-          </p>
+        <div class="section-2__container content-wrapper">
+          <div>
+            <h2 class="section-2__title section-title">Sobre mi</h2>
+            <p class="section-2__parrafo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque velit velit, volutpat semper dignissim dictum,
+              imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+              Suspendisse potenti. Ut semper sagittis ligula et lacinia.
+            </p>
+            <p class="section-2__parrafo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque velit velit, volutpat semper dignissim dictum,
+              imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+              Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean
+              sit amet felis venenatis, egestas metus vitae, aliquet metus.
+            </p>
+          </div>
         </div>
       </section>
       <section class="section-3 container section-column">
         <h2 class="section-title">Skills</h2>
-        <div class="section-3__container">
+        <div class="section-3__container content-wrapper">
           <div class="section-3__item">
             <img
               height="40px"
@@ -132,7 +139,7 @@
           </div>
         </div>
         <h2 class="section-title">Hobbies</h2>
-        <div class="section-3__container">
+        <div class="section-3__container content-wrapper">
           <div class="section-3__item">
             <img src="./images/logo/film.svg" alt="" />
             <span class="section-3__name">Ver Series</span>
@@ -161,24 +168,38 @@
       </section>
       <section class="section-4 container section-column">
         <h2 class="section-title">Formación Académica</h2>
-        <div class="section-4__container">
+        <div class="section-4__container content-wrapper">
           <div class="section-4__contenido">
             <div class="section-4__item">
-              <img src="./images/logo-alura.svg" alt="" />
+              <img
+                src="./images/codo-a-codo-logo.png"
+                alt=""
+                class="section-4__img"
+              />
+            </div>
+            <h3 class="section-4__texto">
+              Formación en Desarrollo Full Stack con Javascript
+            </h3>
+            <p class="section-4__parrafo">2022 - Codo a Codo 4.0</p>
+          </div>
+          <div class="section-4__contenido">
+            <div class="section-4__item">
+              <img
+                src="./images/logo-alura.svg"
+                alt=""
+                class="section-4__img"
+              />
             </div>
             <h3 class="section-4__texto">Formación en UX Design</h3>
             <p class="section-4__parrafo">2022 - Alura</p>
           </div>
           <div class="section-4__contenido">
             <div class="section-4__item">
-              <img src="./images/logo-alura.svg" alt="" />
-            </div>
-            <h3 class="section-4__texto">Formación en UX Design</h3>
-            <p class="section-4__parrafo">2022 - Alura</p>
-          </div>
-          <div class="section-4__contenido">
-            <div class="section-4__item">
-              <img src="./images/logo-alura.svg" alt="" />
+              <img
+                src="./images/logo-alura.svg"
+                alt=""
+                class="section-4__img"
+              />
             </div>
             <h3 class="section-4__texto">Formación en UX Design</h3>
             <p class="section-4__parrafo">2022 - Alura</p>
@@ -187,7 +208,7 @@
       </section>
       <section class="section-5 container section-column">
         <h2 class="section-title">Experiencia profesional</h2>
-        <div class="section-5__row-a">
+        <div class="section-5__row-a content-wrapper">
           <div>
             <img src="http://via.placeholder.com/752x406" alt="" width="100%" />
           </div>
@@ -200,7 +221,7 @@
             </div>
           </div>
         </div>
-        <div class="section-5__row-b">
+        <div class="section-5__row-b content-wrapper">
           <div class="section-5__description-wrapper">
             <h3 class="section-5__title">Encriptador de texto</h3>
             <p class="section-5__text">Challenge alura Codificador</p>
@@ -213,7 +234,7 @@
             <img src="http://via.placeholder.com/752x406" alt="" width="100%" />
           </div>
         </div>
-        <div class="section-5__row-a">
+        <div class="section-5__row-a content-wrapper">
           <div>
             <img src="http://via.placeholder.com/752x406" alt="" width="100%" />
           </div>
@@ -226,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="section-5__row-b">
+        <div class="section-5__row-b content-wrapper">
           <div class="section-5__description-wrapper">
             <h3 class="section-5__title">Encriptador de texto</h3>
             <p class="section-5__text">Challenge alura Codificador</p>
@@ -241,39 +262,60 @@
         </div>
       </section>
       <section class="section-6 container">
-        <div>
-          <img src="./images/contacto.jpg" alt="" class="section-6__img" />
-        </div>
-        <div class="section-6__container">
-          <h2 class="section-6__title">Contacto</h2>
-          <p class="section-6__description">¿Quieres contactarme?</p>
-          <p class="section-6__description">
-            Complete el siguiente formulario y me pondré en contacto con usted
-            lo antes posible.
-          </p>
-          <div class="input-block">
-            <input type="text" name="input-text" required spellcheck="false" />
-            <span class="placeholder"> Nombre </span>
+        <div class="section-6__container content-wrapper">
+          <div>
+            <img
+              src="./images/contacto.jpg"
+              alt=""
+              class="section-6__img mobile-hidden"
+            />
           </div>
-          <div class="input-block">
-            <input type="text" name="input-text" required spellcheck="false" />
-            <span class="placeholder"> E-mail </span>
+          <div>
+            <h2 class="section-6__title">Contacto</h2>
+            <p class="section-6__description">¿Quieres contactarme?</p>
+            <p class="section-6__description">
+              Complete el siguiente formulario y me pondré en contacto con usted
+              lo antes posible.
+            </p>
+            <div class="input-block">
+              <input
+                type="text"
+                name="input-text"
+                required
+                spellcheck="false"
+              />
+              <span class="placeholder"> Nombre </span>
+            </div>
+            <div class="input-block">
+              <input
+                type="text"
+                name="input-text"
+                required
+                spellcheck="false"
+              />
+              <span class="placeholder"> E-mail </span>
+            </div>
+            <div class="input-block">
+              <input
+                type="text"
+                name="input-text"
+                required
+                spellcheck="false"
+              />
+              <span class="placeholder"> Asunto </span>
+            </div>
+            <div class="input-block">
+              <textarea
+                type="text"
+                name="input-text"
+                required
+                spellcheck="false"
+                rows="5"
+              ></textarea>
+              <span class="placeholder"> Mensaje </span>
+            </div>
+            <button class="button-filled">Enviar mensaje</button>
           </div>
-          <div class="input-block">
-            <input type="text" name="input-text" required spellcheck="false" />
-            <span class="placeholder"> Asunto </span>
-          </div>
-          <div class="input-block">
-            <textarea
-              type="text"
-              name="input-text"
-              required
-              spellcheck="false"
-              rows="5"
-            ></textarea>
-            <span class="placeholder"> Mensaje </span>
-          </div>
-          <button class="button-filled">Enviar mensaje</button>
         </div>
       </section>
     </main>
