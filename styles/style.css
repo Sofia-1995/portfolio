@@ -31,6 +31,10 @@ button {
   text-decoration: none;
 }
 
+.link-email {
+  font-weight: 700;
+}
+
 .section-column {
   display: flex;
   align-items: center;
@@ -108,7 +112,7 @@ button {
 .section-1__container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 17px;
+  gap: 17px;
 }
 
 .section-1__wrapper {
@@ -403,9 +407,8 @@ button {
   }
 
   /* Section 1 main*/
-
   .section-1__container {
-    grid-gap: 32px;
+    gap: 32px;
     grid-template-columns: 3fr 1fr;
   }
 
@@ -512,4 +515,83 @@ button {
 }
 
 @media (max-width: 700px) {
+  /* Genericos */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .button-outlined {
+    font-size: 14px;
+  }
+
+  .links.link-email {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  /* Section 1 main*/
+  .section-1 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .section-1__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .section-1__title {
+    margin-bottom: 16px;
+  }
+
+  .section-1__parrafo {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .section-1__nav {
+    gap: 8px;
+  }
+
+  .section-1__arrow {
+    margin-left: 0;
+  }
+
+  .section-1__img {
+    width: 98px;
+    height: 98px;
+    padding: 0;
+  }
+
+  /* Section 2 */
+  .section-2 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  /* Section 3 */
+  .section-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .section-3__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 32px;
+  }
+
+  /* Section 4 */
+  .section-4__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
