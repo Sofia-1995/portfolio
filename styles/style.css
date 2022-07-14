@@ -80,9 +80,17 @@ button {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.header__content {
   display: flex;
   justify-content: space-between;
-  width: auto;
 }
 
 .header__title {
@@ -106,6 +114,10 @@ button {
 }
 
 /* Section 1 main*/
+main {
+  padding-top: 88px;
+}
+
 .section-1 {
   padding-bottom: 32px;
   padding-top: 32px;
