@@ -307,44 +307,30 @@
               Complete el siguiente formulario y me pondré en contacto con usted
               lo antes posible.
             </p>
-            <div class="input-block">
-              <input
-                type="text"
-                name="input-text"
-                required
-                spellcheck="false"
-              />
-              <span class="placeholder"> Nombre </span>
-            </div>
-            <div class="input-block">
-              <input
-                type="text"
-                name="input-text"
-                required
-                spellcheck="false"
-              />
-              <span class="placeholder"> E-mail </span>
-            </div>
-            <div class="input-block">
-              <input
-                type="text"
-                name="input-text"
-                required
-                spellcheck="false"
-              />
-              <span class="placeholder"> Asunto </span>
-            </div>
-            <div class="input-block">
-              <textarea
-                type="text"
-                name="input-text"
-                required
-                spellcheck="false"
-                rows="5"
-              ></textarea>
-              <span class="placeholder"> Mensaje </span>
-            </div>
-            <button class="button-filled">Enviar mensaje</button>
+            <form id="my-form">
+              <div class="input-block">
+                <input type="text" name="nombre" spellcheck="false" />
+                <span class="placeholder"> Nombre </span>
+                <p id="my-form-status-nombre"></p>
+              </div>
+              <div class="input-block">
+                <input name="email" type="text" spellcheck="false" />
+                <span class="placeholder"> E-mail </span>
+                <p id="my-form-status-email"></p>
+              </div>
+              <div class="input-block">
+                <input type="text" name="asunto" spellcheck="false" />
+                <span class="placeholder"> Asunto </span>
+              </div>
+              <div class="input-block">
+                <textarea name="mensaje" spellcheck="false" rows="5"></textarea>
+                <span class="placeholder"> Mensaje </span>
+              </div>
+              <button type="submit" class="button-filled" id="my-form-button">
+                Enviar mensaje
+              </button>
+              <p id="my-form-status"></p>
+            </form>
           </div>
         </div>
       </section>
@@ -358,5 +344,6 @@
         .getElementById("current-year")
         .appendChild(document.createTextNode(new Date().getFullYear()));
     </script>
+    <script src="./formulario.js"></script>
   </body>
 </html>
