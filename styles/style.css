@@ -359,6 +359,19 @@ button {
   margin-bottom: 32px;
 }
 
+.section-6__error {
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 8px 0 0;
+}
+
+.section-6__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 /* Footer */
 .footer {
   display: flex;

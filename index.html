@@ -311,25 +311,29 @@
               <div class="input-block">
                 <input type="text" name="nombre" spellcheck="false" />
                 <span class="placeholder"> Nombre </span>
-                <p id="my-form-status-nombre"></p>
+                <p id="my-form-status-nombre" class="section-6__error"></p>
               </div>
               <div class="input-block">
                 <input name="email" type="text" spellcheck="false" />
                 <span class="placeholder"> E-mail </span>
-                <p id="my-form-status-email"></p>
+                <p id="my-form-status-email" class="section-6__error"></p>
               </div>
               <div class="input-block">
                 <input type="text" name="asunto" spellcheck="false" />
                 <span class="placeholder"> Asunto </span>
+                <p id="my-form-status-asunto" class="section-6__error"></p>
               </div>
               <div class="input-block">
                 <textarea name="mensaje" spellcheck="false" rows="5"></textarea>
                 <span class="placeholder"> Mensaje </span>
+                <p id="my-form-status-mensaje" class="section-6__error"></p>
               </div>
-              <button type="submit" class="button-filled" id="my-form-button">
-                Enviar mensaje
-              </button>
-              <p id="my-form-status"></p>
+              <div class="section-6__button-wrapper">
+                <button type="submit" class="button-filled" id="my-form-button">
+                  Enviar mensaje
+                </button>
+                <p id="my-form-status"></p>
+              </div>
             </form>
           </div>
         </div>
